@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday, Sister!</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Great+Vibes&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Caveat', cursive;
+      /* Keeping original background image as requested by format */
+      background: url('IMG_20241110_170438_782.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      min-height: 100vh;
+      overflow-y: auto;
+      padding: 20px;
+      position: relative;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+      animation: fadeIn 2s ease forwards;
+      opacity: 0;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      color: #ffcce5;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #dda0dd;
+      margin: 20px 0;
+      font-size: 1.5em;
+      line-height: 1.7;
+    }
+
+    p {
+      color: #e0b0ff;
+      font-size: 1.1em;
+      line-height: 1.8;
+      margin: 18px 0;
+    }
+
+    a {
+      color: #c3a0e8;
+      text-decoration: underline;
+    }
+
+    img {
+      width: 100%;
+      max-width: 320px;
+      border-radius: 10px;
+      margin: 20px auto;
+      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+      display: block;
+    }
+
+    .song-section {
+      margin: 40px 0;
+      padding: 20px;
+      border: 2px dashed #ffcce5;
+      border-radius: 10px;
+      cursor: pointer; /* Indicates it's clickable */
+      transition: background-color 0.3s;
+    }
+    
+    .song-section:hover {
+        background-color: rgba(255, 204, 229, 0.1); /* Light hover effect */
+    }
+
+    .song-section h3 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2em;
+      color: #ffcce5;
+      margin-bottom: 15px;
+    }
+
+    .song-section pre {
+      font-family: 'Caveat', cursive;
+      font-size: 1.3em;
+      color: #fff;
+      white-space: pre-wrap;
+      text-align: center;
+      line-height: 1.5;
+    }
+    
+    .footer {
+      margin-top: 40px;
+      font-style: italic;
+      color: #e0b0ff;
+      font-size: 1.2em;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2.3em;
+      }
+
+      h2 {
+        font-size: 1.2em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+      .song-section pre {
+        font-size: 1.1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-jazzyfrenchy.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="content">
+    
+    <img src="IMG_20241110_172143_154.jpg" alt="Happy Birthday Image" />
+
+    <h1>Happy Birthday, My Amazing Sister!</h1>
+
+    <h2>
+      My wonderful sister, Happy Birthday! Today is all about celebrating the incredible person you are—my best friend, my rock, and my partner in crime. Every year with you is truly a gift.
+    </h2>
+
+    <p>
+      I remember all our late-night talks, the way we laugh until we cry, and how much I rely on your kindness and strength. You’ve always inspired me to be better, supported me without question, and reminded me of who I am when I needed it most. Thank you for being the wonderful sibling that you are. I hope your day is filled with everything that makes you smile. Here's to you! 🥳
+    </p>
+
+    <a href="https://www.youtube.com/watch?v=ANXUxXO95Nc" target="_blank" style="text-decoration: none;">
+        <div class="song-section">
+          <h3>Sing Along! Click to Play! 🎶</h3>
+          <pre>
+Happy birthday to you,
+Happy birthday to you,
+Happy birthday dear Sister,
+Happy birthday to you!
+
+(Click here for the YouTube music!)
+          </pre>
+        </div>
+    </a>
+    <div class="footer">— 🤪</div>
+  </div>
+</body>
+</html>
